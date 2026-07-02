@@ -72,7 +72,7 @@ main {
   color: #555;
 }
 
-/* Screenshot */
+/* Screenshot */ 
 
 .screenshot-wrapper {
   display: flex;
@@ -91,7 +91,6 @@ main {
   object-fit: contain;
   min-width: 0;
   display: block;
-  z-index: 10;
 }
 
 /* Body content */
