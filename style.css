@@ -12,6 +12,8 @@ body {
   background-color: #FFEBDA;
 }
 
+a {color: #1C2E5B}
+
 main {
   max-width: 680px;
   margin: 0 auto;
@@ -21,6 +23,7 @@ main {
 /* Hero */
 
 .hero {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,18 +75,23 @@ main {
 /* Screenshot */
 
 .screenshot-wrapper {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  max-width: 320px;
+  position: relative;
+  justify-content: center;
+  gap: 4px;
 }
 
 .app-screenshot {
-  width: 100%;
+  max-height: 460px;
+  max-width: 50%;
+  width: auto;
   height: auto;
+  object-fit: contain;
+  min-width: 0;
   display: block;
-  border-radius: 58px;
-  box-shadow: 0 0 12px -6px rgba(0, 0, 0, 0.16), 0 8px 22px -6px rgba(24, 39, 75, 0.12), 0 14px 64px -4px rgba(24, 39, 75, 0.12);
-  border: 6px solid black;
-  outline: 3px solid #616262;
+  z-index: 10;
 }
 
 /* Body content */
@@ -110,6 +118,8 @@ footer {
   color: #888;
 }
 
+footer a {color: #888}
+
 .footer-illustration {
   width: 100%;
   max-width: 256px;
@@ -119,12 +129,13 @@ footer {
 /* Floating CTA */
 
 .go-to-app-btn {
+  z-index: 100;
   position: fixed;
   bottom: 2.25rem;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  background: #1C2E5B;
+  background: #F43F5E;
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
